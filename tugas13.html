@@ -1,0 +1,105 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body>
+
+
+	<style>
+		img{width:300px;height:300px;}
+		body { background-color: #FFB6C1; } 
+	</style>
+	<img src="a.jpg" style="width:100%">
+
+
+<div class="w3-bar w3-pink">
+	<button class="w3-bar-item w3-button" onclick="openKota('nim')">nim</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('top')">lotus</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('button')">mawar</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('home')">bunga matahari</button>
+	<div class="	w3-dropdown-hover w3-#FFC0CB">	
+	<button class="	w3-button w3-#FFC0CB">menu</button>
+	<div class="	w3-dropdown-content w3-bar-block w3-card-4 w3-#FFC0CB">
+		
+		<button class="w3-bar-item w3-button" onclick="openKota('left')">gfriend</button>
+		<button class="w3-bar-item w3-button" onclick="openKota('right')">bts</button>
+		<button class="w3-bar-item w3-button" onclick="openKota('open city')">seventeen</button>
+	</div>
+	</div>
+
+</div>
+
+<div id="nim" class="w3-container kota w3-animate-top" style="display:none">
+	<center>
+	<h2>Biodata</h2>
+	<table>
+	<tr><td>NAMA<td>:<td>Amira Sri Mulyani
+	<tr><td>NIM<td>:<td>10122105
+	<tr><td>KELAS<td>:<td>IF-3
+	<tr><td>MATKUL<td>:<td>Pemrograman Web
+	<tr><img src="unikom.jpg ">
+	</table>
+</div>
+
+<div id="top" class="w3-container kota w3-animate-fading" style="display:none">
+	<center>
+	<h2>Makna Bunga lotus atu Teratai</h2>
+	<img src="lotus.jpg ">
+	<table>
+	<tr><td>lotus putih<td>:<td>Teratai putih menandakan banyak hal, termasuk keindahan, rahmat, kemurnian pikiran, kekayaan, pengetahuan, kesuburan, dan iman.
+	<tr><td>lotus pink<td>:<td>Tanaman teratai merah muda dengan kuncup tertutup melambangkan melewati jalan spiritual, sedangkan yang mekar penuh berarti pencerahan.
+	<tr><td>lotus kuning<td>:<td>Dalam agama, bunga teratai kuning melambangkan kegembiraan dan keingintahuan intelektual dalam spiritualisme. Mekar yang cerah juga 
+	merujuk pada keterbukaan serta keramahan. 
+	<tr><td>lotus merah<td>:<td>Bunga-bunga halus ini menandakan kasih sayang, simpati, dan cinta tanpa pamrih. Selain itu, mewakili hati, gairah, juga kemurahan hati. 
+	<tr><td>lotus biru<td>:<td>Teratai biru melambangkan kebijaksanaan, pengetahuan, dan aspirasi duniawi.
+	</table>
+
+</div>
+
+<div id="button" class="w3-container kota w3-animate-bottom" style="display:none">
+	<center>
+	<h2>Makna Bunga Mawar</h2>
+	<img src="mawar.jpg ">
+	<table>
+	<tr><td>mawar kuning<td>:<td>mawar kuning hari ini memiliki arti persahabatan, kebahagiaan, kegembiraan, kepedulian, dan penghargaan. Tak heran, bunga mawar kuning
+	lebih cocok diberikan pada seorang sahabat dan teman.
+	<tr><td>mawar merah putih<td>:<td>Saat Anda menggabungkan mawar merah muda dan putih menjadi satu buket, mereka mewakili kebahagiaan dan kegembiraan, dengan bunga 
+	putih memancarkan kemurnian niat
+	<tr><td>mawar biru<td>:<td>mawar biru muda melambangkan kepekaan dan perasaan (namun bukan cinta romantis).
+	<tr><td>mawar persik<td>:<td>Mawar persik pucat mewakili kesederhanaan. Memberi seorang gadis muda warna terang ini adalah simbol penghargaan Anda.
+	</table>
+</div>
+
+<div id="home" class="w3-container kota w3-animate-zoom" style="display:none">
+	<center>
+	<h2>Makna Bunga Matahari</h2>
+	<img src="bungamatahari.jpg ">
+	<p>Bunga matahari melambangkan loyalitas atau kesetiaan karena tumbuhan ini selalu mengikuti arah matahari.<p>
+	Setiap pagi, menghadap ke sisi timur mengikuti arah matahari. Sedangkan pada sore hari akan berotasi ke mengikuti terbenamnya matahari
+</div>
+<div id="left" class="w3-container kota w3-animate-left" style="display:none">
+	<center>
+	<h2>gfriend</h2>
+	<img src="gfriend.jpg ">
+</div>
+<div id="right" class="w3-container kota w3-animate-right " style="display:none">
+	<center>
+	<h2>bts</h2>
+	<img src="bts.jpg ">
+</div>
+<div id="open city" class="w3-container kota w3-animate-opacity" style="display:none">
+	<center>
+	<h2>seventeen</h2>
+	<img src="seventeen.jpg ">
+</div>
+<script>
+function openKota(namakota) {
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+ }
+ document.getElementById(namakota).style.display = "block";
+}
+</script>
+</body>
+</html>	
